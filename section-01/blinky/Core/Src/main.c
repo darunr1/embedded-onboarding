@@ -96,21 +96,11 @@ int main(void) {
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1) {
-    /* USER CODE END WHILE */
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    HAL_Delay(500);
 
-    /**
-
-    Blinky exercise: 
-
-
-    Don't write code outside the while loop.
-
-    
-    Delete this comment and write your code here.
-    
-    */
-
-    /* USER CODE BEGIN 3 */
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+    HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }
